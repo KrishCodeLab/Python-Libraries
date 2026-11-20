@@ -24,3 +24,5 @@ arr_2d=np.array([[1,2,3],
                  [7,8,9]])
 print("Two Dimensional Array : ")
 print(arr_2d)
+
+
