@@ -25,3 +25,23 @@ print(with_new_row)
 new_col=np.array([[8],[9],[10],[11]])
 with_new_col=np.hstack((with_new_row,new_col))
 print(with_new_col)
+
+# Deleting : Removes elements from array
+numbers=np.array([1,2,3,4,5,6,7,8,9])
+# Insted of returning deleted element delete function returns updated array after updation
+deleted=np.delete(numbers,0)
+print(deleted)
+
+deleted=np.delete(numbers,2)
+print(deleted)
+
+# unique : Returns unique element of array
+unique=np.unique(numbers)
+print(unique)
+
+# count non zero : Returns non zero value
+non_zero=np.count_nonzero(numbers)
+print(non_zero)
+
+# spilt : Split an array into equal parts
+print(np.split(numbers,9))
