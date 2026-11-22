@@ -58,7 +58,10 @@ where_Result=np.where(nums > 5)
 print(where_Result) #-->Displays indices of element
 print("Where result : ",nums[where_Result]) #-->Display actual element
 
-# When given np.where(condition, x, y), it acts like a fast, element-wise if-else statement: if the condition is True, it picks from x; otherwise, it picks from y
+# When given np.where(condition, x, y), it acts like a fast, element-wise if-else statement: if the condition is True, it picks from x; otherwise it picks from y.
 where_Result=np.where(nums > 5 , "Larger", "Smaller")
 print(where_Result)
 
+# conditional array
+condition_arr=np.where(nums > 5,nums *2,nums)
+print(condition_arr)
