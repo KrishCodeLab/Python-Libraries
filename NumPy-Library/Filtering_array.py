@@ -52,5 +52,13 @@ cols = [2, 1, 0]
 print(matrix[rows, cols])
 # Output: [3 5 7]
 
+# where : Conditional Method to check where condition yet satisfied
+# When given only a condition np.where(condition), it returns a tuple of arrays containing the indices where that condition is True.
+where_Result=np.where(nums > 5)
+print(where_Result) #-->Displays indices of element
+print("Where result : ",nums[where_Result]) #-->Display actual element
 
+# When given np.where(condition, x, y), it acts like a fast, element-wise if-else statement: if the condition is True, it picks from x; otherwise, it picks from y
+where_Result=np.where(nums > 5 , "Larger", "Smaller")
+print(where_Result)
 
